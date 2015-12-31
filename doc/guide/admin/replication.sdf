@@ -743,6 +743,9 @@ all of the databases (primary, replica, and the accesslog
 storage database) should also have properly tuned {{DB_CONFIG}} files that meet 
 your needs.
 
+Note: an accesslog database is unique to a given master. Even though the
+syncprov overlay is configured for delta-syncrepl replication, it should NOT be
+replicated on the client.
 
 H3: N-Way Multi-Master
 

@@ -79,6 +79,10 @@ or in raw form.
 
 It is also used for {{SECT:delta-syncrepl replication}}
 
+Note: an accesslog database is unique to a given master. Even though it may have
+a syncprov overlay (e.g. when used for delta-syncrepl replication), it should
+NOT be replicated.
+
 H3: Access Logging Configuration
 
 The following is a basic example that implements Access Logging:
